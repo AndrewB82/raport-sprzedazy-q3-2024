@@ -1,0 +1,61 @@
+ID_Transakcji,Data_Transakcji,Produkt,Kategoria,Przedstawiciel,Region,Kanal_Sprzedazy,Ilosc,Cena_Jednostkowa,Wartosc_Sprzedazy,Koszt,Marza,Procent_Marzy,Klient,Status,Miesiac
+TXN2012,2024-07-03,Mysz Razer DeathAdder,Akcesoria,Michał Lewandowski,Wrocław,B2B,13,289.64,3765.32,2460.91,1304.41,34.6,KLI5596,Anulowana,2024-07
+TXN2021,2024-07-03,Asus ROG Laptop,Elektronika,Maria Kowalczyk,Łódź,Telemarketing,7,5097.02,35679.14,23695.81,11983.33,33.6,KLI8788,Zrealizowana,2024-07
+TXN2004,2024-07-05,Dysk SSD Samsung 1TB,Akcesoria,Katarzyna Kowalska,Katowice,B2B,11,366.22,4028.42,2906.25,1122.17,27.9,KLI4375,W trakcie,2024-07
+TXN2028,2024-07-07,Dysk SSD Samsung 1TB,Akcesoria,Michał Lewandowski,Gdańsk,Dystrybutor,9,335.99,3023.91,1931.56,1092.35,36.1,KLI2413,W trakcie,2024-07
+TXN2002,2024-07-09,Dell XPS 13,Elektronika,Jan Kowalski,Łódź,Sklep stacjonarny,2,3926.17,7852.34,4800.22,3052.12,38.9,KLI7430,W trakcie,2024-07
+TXN2035,2024-07-11,Router Wi-Fi 6,Elektronika,Maria Kowalczyk,Wrocław,Online,12,660.19,7922.28,6101.54,1820.74,23.0,KLI2935,W trakcie,2024-07
+TXN2049,2024-07-12,Klawiatura Logitech MX,Akcesoria,Krzysztof Zieliński,Poznań,B2B,6,417.4,2504.4,1601.37,903.03,36.1,KLI1260,Anulowana,2024-07
+TXN2013,2024-07-14,Klawiatura Logitech MX,Akcesoria,Piotr Wiśniewski,Kraków,Online,15,509.79,7646.85,6005.35,1641.5,21.5,KLI7731,Anulowana,2024-07
+TXN2017,2024-07-15,Xiaomi Mi 13,Elektronika,Agnieszka Dąbrowska,Warszawa,B2B,13,2047.59,26618.67,17843.58,8775.09,33.0,KLI9802,Zrealizowana,2024-07
+TXN2046,2024-07-19,Klawiatura Logitech MX,Akcesoria,Katarzyna Kowalska,Kraków,Telemarketing,14,515.19,7212.66,5248.37,1964.29,27.2,KLI5898,Zrealizowana,2024-07
+TXN2024,2024-07-21,Monitor Samsung 27'',Elektronika,Piotr Wiśniewski,Łódź,B2B,14,1218.96,17065.44,11625.71,5439.73,31.9,KLI5196,W trakcie,2024-07
+TXN2030,2024-07-21,Klawiatura Logitech MX,Akcesoria,Jan Kowalski,Kraków,Online,14,456.89,6396.46,4419.22,1977.24,30.9,KLI8687,W trakcie,2024-07
+TXN2050,2024-07-23,Monitor Samsung 27'',Elektronika,Anna Nowak,Wrocław,Telemarketing,15,1086.21,16293.15,11201.76,5091.39,31.2,KLI3773,Anulowana,2024-07
+TXN2056,2024-07-25,MacBook Pro M3,Elektronika,Piotr Wiśniewski,Łódź,Online,15,9260.51,138907.65,101435.92,37471.73,27.0,KLI2976,W trakcie,2024-07
+TXN2006,2024-07-26,Xiaomi Mi 13,Elektronika,Magdalena Szymańska,Poznań,Sklep stacjonarny,15,2450.73,36760.95,22971.15,13789.8,37.5,KLI7107,Zrealizowana,2024-07
+TXN2034,2024-07-26,Monitor Samsung 27'',Elektronika,Piotr Wiśniewski,Łódź,Online,7,1301.31,9109.17,6442.71,2666.46,29.3,KLI8335,Anulowana,2024-07
+TXN2003,2024-08-02,Laptop Lenovo ThinkPad,Elektronika,Anna Nowak,Szczecin,B2B,11,5379.75,59177.25,40368.74,18808.51,31.8,KLI9819,Anulowana,2024-08
+TXN2016,2024-08-03,Mysz Razer DeathAdder,Akcesoria,Magdalena Szymańska,Gdańsk,Telemarketing,12,257.44,3089.28,2027.62,1061.66,34.4,KLI1376,Anulowana,2024-08
+TXN2023,2024-08-03,Surface Pro 9,Elektronika,Magdalena Szymańska,Wrocław,B2B,14,4521.71,63303.94,38894.42,24409.52,38.6,KLI6235,Zrealizowana,2024-08
+TXN2054,2024-08-06,Xiaomi Mi 13,Elektronika,Krzysztof Zieliński,Poznań,Dystrybutor,11,2283.67,25120.37,19626.45,5493.92,21.9,KLI8066,Zrealizowana,2024-08
+TXN2019,2024-08-08,Surface Pro 9,Elektronika,Agnieszka Dąbrowska,Warszawa,Online,11,3843.16,42274.76,26996.61,15278.15,36.1,KLI7951,Anulowana,2024-08
+TXN2039,2024-08-12,iPad Pro 12.9,Elektronika,Magdalena Szymańska,Poznań,Sklep stacjonarny,12,5410.81,64929.72,41088.42,23841.3,36.7,KLI1909,W trakcie,2024-08
+TXN2011,2024-08-13,Kamera Canon EOS,Elektronika,Michał Lewandowski,Łódź,Sklep stacjonarny,10,2636.85,26368.5,16619.3,9749.2,37.0,KLI6773,Zrealizowana,2024-08
+TXN2057,2024-08-13,Monitor Samsung 27'',Elektronika,Agnieszka Dąbrowska,Poznań,Sklep stacjonarny,5,1368.03,6840.15,5326.53,1513.62,22.1,KLI5157,Anulowana,2024-08
+TXN2036,2024-08-14,Mysz Razer DeathAdder,Akcesoria,Maria Kowalczyk,Poznań,B2B,15,313.24,4698.6,3254.18,1444.42,30.7,KLI9193,Anulowana,2024-08
+TXN2052,2024-08-15,iPhone 15 Pro,Elektronika,Anna Nowak,Katowice,Telemarketing,11,6222.04,68442.44,41320.2,27122.24,39.6,KLI5967,W trakcie,2024-08
+TXN2038,2024-08-16,HP EliteBook 850,Elektronika,Agnieszka Dąbrowska,Katowice,Dystrybutor,14,2993.89,41914.46,28803.6,13110.86,31.3,KLI7592,Anulowana,2024-08
+TXN2060,2024-08-16,Klawiatura Logitech MX,Akcesoria,Agnieszka Dąbrowska,Wrocław,Online,10,453.1,4531.0,3320.9,1210.1,26.7,KLI4920,Anulowana,2024-08
+TXN2037,2024-08-17,Monitor Samsung 27'',Elektronika,Krzysztof Zieliński,Szczecin,Dystrybutor,14,1414.35,19800.9,12367.22,7433.68,37.5,KLI2125,Zrealizowana,2024-08
+TXN2005,2024-08-18,Asus ROG Laptop,Elektronika,Anna Nowak,Gdańsk,Telemarketing,8,6174.6,49396.8,33934.9,15461.9,31.3,KLI6295,Zrealizowana,2024-08
+TXN2015,2024-08-22,Dysk SSD Samsung 1TB,Akcesoria,Piotr Wiśniewski,Warszawa,Sklep stacjonarny,8,306.71,2453.68,1823.43,630.25,25.7,KLI2167,Anulowana,2024-08
+TXN2042,2024-08-24,Mysz Razer DeathAdder,Akcesoria,Piotr Wiśniewski,Szczecin,Online,13,315.5,4101.5,2519.85,1581.65,38.6,KLI7917,Anulowana,2024-08
+TXN2033,2024-08-25,Surface Pro 9,Elektronika,Katarzyna Kowalska,Gdańsk,Online,4,4444.71,17778.84,13954.37,3824.47,21.5,KLI7664,Anulowana,2024-08
+TXN2048,2024-08-25,iPad Pro 12.9,Elektronika,Katarzyna Kowalska,Poznań,Online,14,4220.85,59091.9,38515.31,20576.59,34.8,KLI6425,Anulowana,2024-08
+TXN2009,2024-08-29,Xiaomi Mi 13,Elektronika,Katarzyna Kowalska,Poznań,Telemarketing,15,2212.16,33182.4,23223.65,9958.75,30.0,KLI4552,Zrealizowana,2024-08
+TXN2047,2024-09-01,Klawiatura Logitech MX,Akcesoria,Maria Kowalczyk,Gdańsk,Sklep stacjonarny,9,362.01,3258.09,2511.5,746.59,22.9,KLI1624,W trakcie,2024-09
+TXN2027,2024-09-03,Surface Pro 9,Elektronika,Krzysztof Zieliński,Wrocław,Sklep stacjonarny,8,3491.91,27935.28,19513.03,8422.25,30.1,KLI3682,W trakcie,2024-09
+TXN2025,2024-09-04,Dell XPS 13,Elektronika,Krzysztof Zieliński,Łódź,Dystrybutor,9,4156.49,37408.41,28986.1,8422.31,22.5,KLI9136,Anulowana,2024-09
+TXN2058,2024-09-05,Mysz Razer DeathAdder,Akcesoria,Krzysztof Zieliński,Kraków,Sklep stacjonarny,4,328.86,1315.44,996.78,318.66,24.2,KLI9570,W trakcie,2024-09
+TXN2018,2024-09-06,Klawiatura Logitech MX,Akcesoria,Jan Kowalski,Warszawa,Sklep stacjonarny,10,386.37,3863.7,2533.16,1330.54,34.4,KLI7752,Anulowana,2024-09
+TXN2022,2024-09-08,iPhone 15 Pro,Elektronika,Katarzyna Kowalska,Wrocław,B2B,10,6159.34,61593.4,37292.4,24301.0,39.5,KLI5693,Zrealizowana,2024-09
+TXN2032,2024-09-08,iPhone 15 Pro,Elektronika,Krzysztof Zieliński,Wrocław,Sklep stacjonarny,3,4557.69,13673.07,8266.97,5406.1,39.5,KLI3624,Zrealizowana,2024-09
+TXN2041,2024-09-09,Mysz Razer DeathAdder,Akcesoria,Piotr Wiśniewski,Warszawa,Dystrybutor,11,315.88,3474.68,2492.53,982.15,28.3,KLI2843,Zrealizowana,2024-09
+TXN2014,2024-09-10,Dell XPS 13,Elektronika,Krzysztof Zieliński,Szczecin,Online,8,3650.47,29203.76,19328.03,9875.73,33.8,KLI8470,Anulowana,2024-09
+TXN2043,2024-09-12,Laptop Lenovo ThinkPad,Elektronika,Anna Nowak,Poznań,Sklep stacjonarny,13,4056.24,52731.12,33024.28,19706.84,37.4,KLI5347,W trakcie,2024-09
+TXN2045,2024-09-13,MacBook Pro M3,Elektronika,Michał Lewandowski,Szczecin,Dystrybutor,7,8002.95,56020.65,38090.32,17930.33,32.0,KLI9497,Anulowana,2024-09
+TXN2029,2024-09-14,Słuchawki Sony WH-1000XM5,Akcesoria,Katarzyna Kowalska,Łódź,Online,8,1197.74,9581.92,6294.89,3287.03,34.3,KLI8562,Anulowana,2024-09
+TXN2031,2024-09-14,HP EliteBook 850,Elektronika,Michał Lewandowski,Wrocław,Dystrybutor,13,4145.49,53891.37,40956.67,12934.7,24.0,KLI2631,Anulowana,2024-09
+TXN2008,2024-09-15,Xiaomi Mi 13,Elektronika,Agnieszka Dąbrowska,Szczecin,Telemarketing,4,2636.66,10546.64,7526.03,3020.61,28.6,KLI5456,Zrealizowana,2024-09
+TXN2020,2024-09-15,Surface Pro 9,Elektronika,Anna Nowak,Warszawa,Online,3,3717.01,11151.03,8312.82,2838.21,25.5,KLI8734,Zrealizowana,2024-09
+TXN2044,2024-09-15,Klawiatura Logitech MX,Akcesoria,Magdalena Szymańska,Gdańsk,Sklep stacjonarny,8,381.85,3054.8,2271.76,783.04,25.6,KLI8518,Anulowana,2024-09
+TXN2010,2024-09-17,iPad Pro 12.9,Elektronika,Anna Nowak,Szczecin,B2B,5,4194.56,20972.8,13409.39,7563.41,36.1,KLI2663,Zrealizowana,2024-09
+TXN2007,2024-09-19,Słuchawki Sony WH-1000XM5,Akcesoria,Magdalena Szymańska,Gdańsk,Online,11,1613.97,17753.67,12377.97,5375.7,30.3,KLI9271,W trakcie,2024-09
+TXN2051,2024-09-19,Kamera Canon EOS,Elektronika,Magdalena Szymańska,Wrocław,Sklep stacjonarny,7,2599.22,18194.54,11784.32,6410.22,35.2,KLI9269,Zrealizowana,2024-09
+TXN2026,2024-09-21,Mysz Razer DeathAdder,Akcesoria,Krzysztof Zieliński,Szczecin,Telemarketing,7,281.4,1969.8,1184.97,784.83,39.8,KLI9974,Zrealizowana,2024-09
+TXN2055,2024-09-21,iPad Pro 12.9,Elektronika,Katarzyna Kowalska,Warszawa,B2B,13,4657.1,60542.3,43930.72,16611.58,27.4,KLI9161,Anulowana,2024-09
+TXN2040,2024-09-22,HP EliteBook 850,Elektronika,Magdalena Szymańska,Wrocław,B2B,1,3151.02,3151.02,2357.87,793.15,25.2,KLI8414,W trakcie,2024-09
+TXN2001,2024-09-27,Drukarka HP LaserJet,Elektronika,Piotr Wiśniewski,Szczecin,Dystrybutor,6,660.57,3963.42,2615.91,1347.51,34.0,KLI8155,Anulowana,2024-09
+TXN2053,2024-09-29,Surface Pro 9,Elektronika,Michał Lewandowski,Kraków,Online,3,4145.6,12436.8,9180.77,3256.03,26.2,KLI5435,Anulowana,2024-09
+TXN2059,2024-09-29,Kamera Canon EOS,Elektronika,Katarzyna Kowalska,Kraków,Online,7,3057.84,21404.88,16608.67,4796.21,22.4,KLI1809,W trakcie,2024-09
