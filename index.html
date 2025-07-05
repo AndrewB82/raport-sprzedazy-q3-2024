@@ -2,1203 +2,1149 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raport Sprzedaży Q3 2024 - Dane Transakcji</title>
+    <title>Raport Sprzedaży Q3 2024 – Dane Transakcji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        .table-container {
-            max-height: 600px;
-            overflow-y: auto;
-        }
-        .summary-stats {
-            background-color: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
-        .stat-item {
-            text-align: center;
-            padding: 10px;
-        }
-        .stat-value {
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #0d6efd;
-        }
-        .stat-label {
-            font-size: 0.9em;
-            color: #6c757d;
-        }
+        .summary-table td { padding: 4px 12px; }
+        .table-responsive { max-height: 700px; overflow-y: auto; }
+        .table td, .table th { white-space: nowrap; }
     </style>
 </head>
-<body>
-    <div class="container-fluid p-4">
-        <div class="row">
-            <div class="col-12">
-                <h1 class="text-center mb-4">Raport Sprzedaży Q3 2024 - Dane Transakcji</h1>
-                <p class="text-muted text-center">Kompleksowe zestawienie sprzedaży z okresu lipiec-wrzesień 2024</p>
-            </div>
-        </div>
+<body class="p-4">
+    <h1 class="mb-4">Raport Sprzedaży Q3 2024 – Dane Transakcji</h1>
 
-        <div class="row mb-4">
-            <div class="col-12">
-                <div class="summary-stats">
-                    <div class="row">
-                        <div class="col-md-3 stat-item">
-                            <div class="stat-value">60</div>
-                            <div class="stat-label">Liczba transakcji</div>
-                        </div>
-                        <div class="col-md-3 stat-item">
-                            <div class="stat-value">1,466,375.89 PLN</div>
-                            <div class="stat-label">Łączna wartość sprzedaży</div>
-                        </div>
-                        <div class="col-md-3 stat-item">
-                            <div class="stat-value">469,850.90 PLN</div>
-                            <div class="stat-label">Łączna marża</div>
-                        </div>
-                        <div class="col-md-3 stat-item">
-                            <div class="stat-value">32.0%</div>
-                            <div class="stat-label">Średnia marża</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12">
-                <div class="table-container">
-                    <table class="table table-striped table-hover table-bordered">
-                        <thead class="table-dark sticky-top">
-                            <tr>
-                                <th>ID_Transakcji</th>
-                                <th>Data_Transakcji</th>
-                                <th>Produkt</th>
-                                <th>Kategoria</th>
-                                <th>Przedstawiciel</th>
-                                <th>Region</th>
-                                <th>Kanal_Sprzedazy</th>
-                                <th>Ilosc</th>
-                                <th>Cena_Jednostkowa</th>
-                                <th>Wartosc_Sprzedazy</th>
-                                <th>Koszt</th>
-                                <th>Marza</th>
-                                <th>Procent_Marzy</th>
-                                <th>Klient</th>
-                                <th>Status</th>
-                                <th>Miesiac</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>TXN2012</td>
-                                <td>2024-07-03</td>
-                                <td>Mysz Razer DeathAdder</td>
-                                <td>Akcesoria</td>
-                                <td>Michał Lewandowski</td>
-                                <td>Wrocław</td>
-                                <td>B2B</td>
-                                <td>13</td>
-                                <td>289.64</td>
-                                <td>3765.32</td>
-                                <td>2460.91</td>
-                                <td>1304.41</td>
-                                <td>34.6%</td>
-                                <td>KLI5596</td>
-                                <td>Anulowana</td>
-                                <td>2024-07</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2021</td>
-                                <td>2024-07-03</td>
-                                <td>Asus ROG Laptop</td>
-                                <td>Elektronika</td>
-                                <td>Maria Kowalczyk</td>
-                                <td>Łódź</td>
-                                <td>Telemarketing</td>
-                                <td>7</td>
-                                <td>5097.02</td>
-                                <td>35679.14</td>
-                                <td>23695.81</td>
-                                <td>11983.33</td>
-                                <td>33.6%</td>
-                                <td>KLI8788</td>
-                                <td>Zrealizowana</td>
-                                <td>2024-07</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2004</td>
-                                <td>2024-07-05</td>
-                                <td>Dysk SSD Samsung 1TB</td>
-                                <td>Akcesoria</td>
-                                <td>Katarzyna Kowalska</td>
-                                <td>Katowice</td>
-                                <td>B2B</td>
-                                <td>11</td>
-                                <td>366.22</td>
-                                <td>4028.42</td>
-                                <td>2906.25</td>
-                                <td>1122.17</td>
-                                <td>27.9%</td>
-                                <td>KLI4375</td>
-                                <td>W trakcie</td>
-                                <td>2024-07</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2028</td>
-                                <td>2024-07-07</td>
-                                <td>Dysk SSD Samsung 1TB</td>
-                                <td>Akcesoria</td>
-                                <td>Michał Lewandowski</td>
-                                <td>Gdańsk</td>
-                                <td>Dystrybutor</td>
-                                <td>9</td>
-                                <td>335.99</td>
-                                <td>3023.91</td>
-                                <td>1931.56</td>
-                                <td>1092.35</td>
-                                <td>36.1%</td>
-                                <td>KLI2413</td>
-                                <td>W trakcie</td>
-                                <td>2024-07</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2002</td>
-                                <td>2024-07-09</td>
-                                <td>Dell XPS 13</td>
-                                <td>Elektronika</td>
-                                <td>Jan Kowalski</td>
-                                <td>Łódź</td>
-                                <td>Sklep stacjonarny</td>
-                                <td>2</td>
-                                <td>3926.17</td>
-                                <td>7852.34</td>
-                                <td>4800.22</td>
-                                <td>3052.12</td>
-                                <td>38.9%</td>
-                                <td>KLI7430</td>
-                                <td>W trakcie</td>
-                                <td>2024-07</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2035</td>
-                                <td>2024-07-11</td>
-                                <td>Router Wi-Fi 6</td>
-                                <td>Elektronika</td>
-                                <td>Maria Kowalczyk</td>
-                                <td>Wrocław</td>
-                                <td>Online</td>
-                                <td>12</td>
-                                <td>660.19</td>
-                                <td>7922.28</td>
-                                <td>6101.54</td>
-                                <td>1820.74</td>
-                                <td>23.0%</td>
-                                <td>KLI2935</td>
-                                <td>W trakcie</td>
-                                <td>2024-07</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2049</td>
-                                <td>2024-07-12</td>
-                                <td>Klawiatura Logitech MX</td>
-                                <td>Akcesoria</td>
-                                <td>Krzysztof Zieliński</td>
-                                <td>Poznań</td>
-                                <td>B2B</td>
-                                <td>6</td>
-                                <td>417.40</td>
-                                <td>2504.40</td>
-                                <td>1601.37</td>
-                                <td>903.03</td>
-                                <td>36.1%</td>
-                                <td>KLI1260</td>
-                                <td>Anulowana</td>
-                                <td>2024-07</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2013</td>
-                                <td>2024-07-14</td>
-                                <td>Klawiatura Logitech MX</td>
-                                <td>Akcesoria</td>
-                                <td>Piotr Wiśniewski</td>
-                                <td>Kraków</td>
-                                <td>Online</td>
-                                <td>15</td>
-                                <td>509.79</td>
-                                <td>7646.85</td>
-                                <td>6005.35</td>
-                                <td>1641.50</td>
-                                <td>21.5%</td>
-                                <td>KLI7731</td>
-                                <td>Anulowana</td>
-                                <td>2024-07</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2017</td>
-                                <td>2024-07-15</td>
-                                <td>Xiaomi Mi 13</td>
-                                <td>Elektronika</td>
-                                <td>Agnieszka Dąbrowska</td>
-                                <td>Warszawa</td>
-                                <td>B2B</td>
-                                <td>13</td>
-                                <td>2047.59</td>
-                                <td>26618.67</td>
-                                <td>17843.58</td>
-                                <td>8775.09</td>
-                                <td>33.0%</td>
-                                <td>KLI9802</td>
-                                <td>Zrealizowana</td>
-                                <td>2024-07</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2046</td>
-                                <td>2024-07-19</td>
-                                <td>Klawiatura Logitech MX</td>
-                                <td>Akcesoria</td>
-                                <td>Katarzyna Kowalska</td>
-                                <td>Kraków</td>
-                                <td>Telemarketing</td>
-                                <td>14</td>
-                                <td>515.19</td>
-                                <td>7212.66</td>
-                                <td>5248.37</td>
-                                <td>1964.29</td>
-                                <td>27.2%</td>
-                                <td>KLI5898</td>
-                                <td>Zrealizowana</td>
-                                <td>2024-07</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2024</td>
-                                <td>2024-07-21</td>
-                                <td>Monitor Samsung 27''</td>
-                                <td>Elektronika</td>
-                                <td>Piotr Wiśniewski</td>
-                                <td>Łódź</td>
-                                <td>B2B</td>
-                                <td>14</td>
-                                <td>1218.96</td>
-                                <td>17065.44</td>
-                                <td>11625.71</td>
-                                <td>5439.73</td>
-                                <td>31.9%</td>
-                                <td>KLI5196</td>
-                                <td>W trakcie</td>
-                                <td>2024-07</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2030</td>
-                                <td>2024-07-21</td>
-                                <td>Klawiatura Logitech MX</td>
-                                <td>Akcesoria</td>
-                                <td>Jan Kowalski</td>
-                                <td>Kraków</td>
-                                <td>Online</td>
-                                <td>14</td>
-                                <td>456.89</td>
-                                <td>6396.46</td>
-                                <td>4419.22</td>
-                                <td>1977.24</td>
-                                <td>30.9%</td>
-                                <td>KLI8687</td>
-                                <td>W trakcie</td>
-                                <td>2024-07</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2050</td>
-                                <td>2024-07-23</td>
-                                <td>Monitor Samsung 27''</td>
-                                <td>Elektronika</td>
-                                <td>Anna Nowak</td>
-                                <td>Wrocław</td>
-                                <td>Telemarketing</td>
-                                <td>15</td>
-                                <td>1086.21</td>
-                                <td>16293.15</td>
-                                <td>11201.76</td>
-                                <td>5091.39</td>
-                                <td>31.2%</td>
-                                <td>KLI3773</td>
-                                <td>Anulowana</td>
-                                <td>2024-07</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2056</td>
-                                <td>2024-07-25</td>
-                                <td>MacBook Pro M3</td>
-                                <td>Elektronika</td>
-                                <td>Piotr Wiśniewski</td>
-                                <td>Łódź</td>
-                                <td>Online</td>
-                                <td>15</td>
-                                <td>9260.51</td>
-                                <td>138907.65</td>
-                                <td>101435.92</td>
-                                <td>37471.73</td>
-                                <td>27.0%</td>
-                                <td>KLI2976</td>
-                                <td>W trakcie</td>
-                                <td>2024-07</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2006</td>
-                                <td>2024-07-26</td>
-                                <td>Xiaomi Mi 13</td>
-                                <td>Elektronika</td>
-                                <td>Magdalena Szymańska</td>
-                                <td>Poznań</td>
-                                <td>Sklep stacjonarny</td>
-                                <td>15</td>
-                                <td>2450.73</td>
-                                <td>36760.95</td>
-                                <td>22971.15</td>
-                                <td>13789.80</td>
-                                <td>37.5%</td>
-                                <td>KLI7107</td>
-                                <td>Zrealizowana</td>
-                                <td>2024-07</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2034</td>
-                                <td>2024-07-26</td>
-                                <td>Monitor Samsung 27''</td>
-                                <td>Elektronika</td>
-                                <td>Piotr Wiśniewski</td>
-                                <td>Łódź</td>
-                                <td>Online</td>
-                                <td>7</td>
-                                <td>1301.31</td>
-                                <td>9109.17</td>
-                                <td>6442.71</td>
-                                <td>2666.46</td>
-                                <td>29.3%</td>
-                                <td>KLI8335</td>
-                                <td>Anulowana</td>
-                                <td>2024-07</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2003</td>
-                                <td>2024-08-02</td>
-                                <td>Laptop Lenovo ThinkPad</td>
-                                <td>Elektronika</td>
-                                <td>Anna Nowak</td>
-                                <td>Szczecin</td>
-                                <td>B2B</td>
-                                <td>11</td>
-                                <td>5379.75</td>
-                                <td>59177.25</td>
-                                <td>40368.74</td>
-                                <td>18808.51</td>
-                                <td>31.8%</td>
-                                <td>KLI9819</td>
-                                <td>Anulowana</td>
-                                <td>2024-08</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2016</td>
-                                <td>2024-08-03</td>
-                                <td>Mysz Razer DeathAdder</td>
-                                <td>Akcesoria</td>
-                                <td>Magdalena Szymańska</td>
-                                <td>Gdańsk</td>
-                                <td>Telemarketing</td>
-                                <td>12</td>
-                                <td>257.44</td>
-                                <td>3089.28</td>
-                                <td>2027.62</td>
-                                <td>1061.66</td>
-                                <td>34.4%</td>
-                                <td>KLI1376</td>
-                                <td>Anulowana</td>
-                                <td>2024-08</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2023</td>
-                                <td>2024-08-03</td>
-                                <td>Surface Pro 9</td>
-                                <td>Elektronika</td>
-                                <td>Magdalena Szymańska</td>
-                                <td>Wrocław</td>
-                                <td>B2B</td>
-                                <td>14</td>
-                                <td>4521.71</td>
-                                <td>63303.94</td>
-                                <td>38894.42</td>
-                                <td>24409.52</td>
-                                <td>38.6%</td>
-                                <td>KLI6235</td>
-                                <td>Zrealizowana</td>
-                                <td>2024-08</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2054</td>
-                                <td>2024-08-06</td>
-                                <td>Xiaomi Mi 13</td>
-                                <td>Elektronika</td>
-                                <td>Krzysztof Zieliński</td>
-                                <td>Poznań</td>
-                                <td>Dystrybutor</td>
-                                <td>11</td>
-                                <td>2283.67</td>
-                                <td>25120.37</td>
-                                <td>19626.45</td>
-                                <td>5493.92</td>
-                                <td>21.9%</td>
-                                <td>KLI8066</td>
-                                <td>Zrealizowana</td>
-                                <td>2024-08</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2019</td>
-                                <td>2024-08-08</td>
-                                <td>Surface Pro 9</td>
-                                <td>Elektronika</td>
-                                <td>Agnieszka Dąbrowska</td>
-                                <td>Warszawa</td>
-                                <td>Online</td>
-                                <td>11</td>
-                                <td>3843.16</td>
-                                <td>42274.76</td>
-                                <td>26996.61</td>
-                                <td>15278.15</td>
-                                <td>36.1%</td>
-                                <td>KLI7951</td>
-                                <td>Anulowana</td>
-                                <td>2024-08</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2039</td>
-                                <td>2024-08-12</td>
-                                <td>iPad Pro 12.9</td>
-                                <td>Elektronika</td>
-                                <td>Magdalena Szymańska</td>
-                                <td>Poznań</td>
-                                <td>Sklep stacjonarny</td>
-                                <td>12</td>
-                                <td>5410.81</td>
-                                <td>64929.72</td>
-                                <td>41088.42</td>
-                                <td>23841.30</td>
-                                <td>36.7%</td>
-                                <td>KLI1909</td>
-                                <td>W trakcie</td>
-                                <td>2024-08</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2011</td>
-                                <td>2024-08-13</td>
-                                <td>Kamera Canon EOS</td>
-                                <td>Elektronika</td>
-                                <td>Michał Lewandowski</td>
-                                <td>Łódź</td>
-                                <td>Sklep stacjonarny</td>
-                                <td>10</td>
-                                <td>2636.85</td>
-                                <td>26368.50</td>
-                                <td>16619.30</td>
-                                <td>9749.20</td>
-                                <td>37.0%</td>
-                                <td>KLI6773</td>
-                                <td>Zrealizowana</td>
-                                <td>2024-08</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2057</td>
-                                <td>2024-08-13</td>
-                                <td>Monitor Samsung 27''</td>
-                                <td>Elektronika</td>
-                                <td>Agnieszka Dąbrowska</td>
-                                <td>Poznań</td>
-                                <td>Sklep stacjonarny</td>
-                                <td>5</td>
-                                <td>1368.03</td>
-                                <td>6840.15</td>
-                                <td>5326.53</td>
-                                <td>1513.62</td>
-                                <td>22.1%</td>
-                                <td>KLI5157</td>
-                                <td>Anulowana</td>
-                                <td>2024-08</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2036</td>
-                                <td>2024-08-14</td>
-                                <td>Mysz Razer DeathAdder</td>
-                                <td>Akcesoria</td>
-                                <td>Maria Kowalczyk</td>
-                                <td>Poznań</td>
-                                <td>B2B</td>
-                                <td>15</td>
-                                <td>313.24</td>
-                                <td>4698.60</td>
-                                <td>3254.18</td>
-                                <td>1444.42</td>
-                                <td>30.7%</td>
-                                <td>KLI9193</td>
-                                <td>Anulowana</td>
-                                <td>2024-08</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2052</td>
-                                <td>2024-08-15</td>
-                                <td>iPhone 15 Pro</td>
-                                <td>Elektronika</td>
-                                <td>Anna Nowak</td>
-                                <td>Katowice</td>
-                                <td>Telemarketing</td>
-                                <td>11</td>
-                                <td>6222.04</td>
-                                <td>68442.44</td>
-                                <td>41320.20</td>
-                                <td>27122.24</td>
-                                <td>39.6%</td>
-                                <td>KLI5967</td>
-                                <td>W trakcie</td>
-                                <td>2024-08</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2038</td>
-                                <td>2024-08-16</td>
-                                <td>HP EliteBook 850</td>
-                                <td>Elektronika</td>
-                                <td>Agnieszka Dąbrowska</td>
-                                <td>Katowice</td>
-                                <td>Dystrybutor</td>
-                                <td>14</td>
-                                <td>2993.89</td>
-                                <td>41914.46</td>
-                                <td>28803.60</td>
-                                <td>13110.86</td>
-                                <td>31.3%</td>
-                                <td>KLI7592</td>
-                                <td>Anulowana</td>
-                                <td>2024-08</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2060</td>
-                                <td>2024-08-16</td>
-                                <td>Klawiatura Logitech MX</td>
-                                <td>Akcesoria</td>
-                                <td>Agnieszka Dąbrowska</td>
-                                <td>Wrocław</td>
-                                <td>Online</td>
-                                <td>10</td>
-                                <td>453.10</td>
-                                <td>4531.00</td>
-                                <td>3320.90</td>
-                                <td>1210.10</td>
-                                <td>26.7%</td>
-                                <td>KLI4920</td>
-                                <td>Anulowana</td>
-                                <td>2024-08</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2037</td>
-                                <td>2024-08-17</td>
-                                <td>Monitor Samsung 27''</td>
-                                <td>Elektronika</td>
-                                <td>Krzysztof Zieliński</td>
-                                <td>Szczecin</td>
-                                <td>Dystrybutor</td>
-                                <td>14</td>
-                                <td>1414.35</td>
-                                <td>19800.90</td>
-                                <td>12367.22</td>
-                                <td>7433.68</td>
-                                <td>37.5%</td>
-                                <td>KLI2125</td>
-                                <td>Zrealizowana</td>
-                                <td>2024-08</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2005</td>
-                                <td>2024-08-18</td>
-                                <td>Asus ROG Laptop</td>
-                                <td>Elektronika</td>
-                                <td>Anna Nowak</td>
-                                <td>Gdańsk</td>
-                                <td>Telemarketing</td>
-                                <td>8</td>
-                                <td>6174.60</td>
-                                <td>49396.80</td>
-                                <td>33934.90</td>
-                                <td>15461.90</td>
-                                <td>31.3%</td>
-                                <td>KLI6295</td>
-                                <td>Zrealizowana</td>
-                                <td>2024-08</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2015</td>
-                                <td>2024-08-22</td>
-                                <td>Dysk SSD Samsung 1TB</td>
-                                <td>Akcesoria</td>
-                                <td>Piotr Wiśniewski</td>
-                                <td>Warszawa</td>
-                                <td>Sklep stacjonarny</td>
-                                <td>8</td>
-                                <td>306.71</td>
-                                <td>2453.68</td>
-                                <td>1823.43</td>
-                                <td>630.25</td>
-                                <td>25.7%</td>
-                                <td>KLI2167</td>
-                                <td>Anulowana</td>
-                                <td>2024-08</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2042</td>
-                                <td>2024-08-24</td>
-                                <td>Mysz Razer DeathAdder</td>
-                                <td>Akcesoria</td>
-                                <td>Piotr Wiśniewski</td>
-                                <td>Szczecin</td>
-                                <td>Online</td>
-                                <td>13</td>
-                                <td>315.50</td>
-                                <td>4101.50</td>
-                                <td>2519.85</td>
-                                <td>1581.65</td>
-                                <td>38.6%</td>
-                                <td>KLI7917</td>
-                                <td>Anulowana</td>
-                                <td>2024-08</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2033</td>
-                                <td>2024-08-25</td>
-                                <td>Surface Pro 9</td>
-                                <td>Elektronika</td>
-                                <td>Katarzyna Kowalska</td>
-                                <td>Gdańsk</td>
-                                <td>Online</td>
-                                <td>4</td>
-                                <td>4444.71</td>
-                                <td>17778.84</td>
-                                <td>13954.37</td>
-                                <td>3824.47</td>
-                                <td>21.5%</td>
-                                <td>KLI7664</td>
-                                <td>Anulowana</td>
-                                <td>2024-08</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2048</td>
-                                <td>2024-08-25</td>
-                                <td>iPad Pro 12.9</td>
-                                <td>Elektronika</td>
-                                <td>Katarzyna Kowalska</td>
-                                <td>Poznań</td>
-                                <td>Online</td>
-                                <td>14</td>
-                                <td>4220.85</td>
-                                <td>59091.90</td>
-                                <td>38515.31</td>
-                                <td>20576.59</td>
-                                <td>34.8%</td>
-                                <td>KLI6425</td>
-                                <td>Anulowana</td>
-                                <td>2024-08</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2009</td>
-                                <td>2024-08-29</td>
-                                <td>Xiaomi Mi 13</td>
-                                <td>Elektronika</td>
-                                <td>Katarzyna Kowalska</td>
-                                <td>Poznań</td>
-                                <td>Telemarketing</td>
-                                <td>15</td>
-                                <td>2212.16</td>
-                                <td>33182.40</td>
-                                <td>23223.65</td>
-                                <td>9958.75</td>
-                                <td>30.0%</td>
-                                <td>KLI4552</td>
-                                <td>Zrealizowana</td>
-                                <td>2024-08</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2047</td>
-                                <td>2024-09-01</td>
-                                <td>Klawiatura Logitech MX</td>
-                                <td>Akcesoria</td>
-                                <td>Maria Kowalczyk</td>
-                                <td>Gdańsk</td>
-                                <td>Sklep stacjonarny</td>
-                                <td>9</td>
-                                <td>362.01</td>
-                                <td>3258.09</td>
-                                <td>2511.50</td>
-                                <td>746.59</td>
-                                <td>22.9%</td>
-                                <td>KLI1624</td>
-                                <td>W trakcie</td>
-                                <td>2024-09</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2027</td>
-                                <td>2024-09-03</td>
-                                <td>Surface Pro 9</td>
-                                <td>Elektronika</td>
-                                <td>Krzysztof Zieliński</td>
-                                <td>Wrocław</td>
-                                <td>Sklep stacjonarny</td>
-                                <td>8</td>
-                                <td>3491.91</td>
-                                <td>27935.28</td>
-                                <td>19513.03</td>
-                                <td>8422.25</td>
-                                <td>30.1%</td>
-                                <td>KLI3682</td>
-                                <td>W trakcie</td>
-                                <td>2024-09</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2025</td>
-                                <td>2024-09-04</td>
-                                <td>Dell XPS 13</td>
-                                <td>Elektronika</td>
-                                <td>Krzysztof Zieliński</td>
-                                <td>Łódź</td>
-                                <td>Dystrybutor</td>
-                                <td>9</td>
-                                <td>4156.49</td>
-                                <td>37408.41</td>
-                                <td>28986.10</td>
-                                <td>8422.31</td>
-                                <td>22.5%</td>
-                                <td>KLI9136</td>
-                                <td>Anulowana</td>
-                                <td>2024-09</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2058</td>
-                                <td>2024-09-05</td>
-                                <td>Mysz Razer DeathAdder</td>
-                                <td>Akcesoria</td>
-                                <td>Krzysztof Zieliński</td>
-                                <td>Kraków</td>
-                                <td>Sklep stacjonarny</td>
-                                <td>4</td>
-                                <td>328.86</td>
-                                <td>1315.44</td>
-                                <td>996.78</td>
-                                <td>318.66</td>
-                                <td>24.2%</td>
-                                <td>KLI9570</td>
-                                <td>W trakcie</td>
-                                <td>2024-09</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2018</td>
-                                <td>2024-09-06</td>
-                                <td>Klawiatura Logitech MX</td>
-                                <td>Akcesoria</td>
-                                <td>Jan Kowalski</td>
-                                <td>Warszawa</td>
-                                <td>Sklep stacjonarny</td>
-                                <td>10</td>
-                                <td>386.37</td>
-                                <td>3863.70</td>
-                                <td>2533.16</td>
-                                <td>1330.54</td>
-                                <td>34.4%</td>
-                                <td>KLI7752</td>
-                                <td>Anulowana</td>
-                                <td>2024-09</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2022</td>
-                                <td>2024-09-08</td>
-                                <td>iPhone 15 Pro</td>
-                                <td>Elektronika</td>
-                                <td>Katarzyna Kowalska</td>
-                                <td>Wrocław</td>
-                                <td>B2B</td>
-                                <td>10</td>
-                                <td>6159.34</td>
-                                <td>61593.40</td>
-                                <td>37292.40</td>
-                                <td>24301.00</td>
-                                <td>39.5%</td>
-                                <td>KLI5693</td>
-                                <td>Zrealizowana</td>
-                                <td>2024-09</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2032</td>
-                                <td>2024-09-08</td>
-                                <td>iPhone 15 Pro</td>
-                                <td>Elektronika</td>
-                                <td>Krzysztof Zieliński</td>
-                                <td>Wrocław</td>
-                                <td>Sklep stacjonarny</td>
-                                <td>3</td>
-                                <td>4557.69</td>
-                                <td>13673.07</td>
-                                <td>8266.97</td>
-                                <td>5406.10</td>
-                                <td>39.5%</td>
-                                <td>KLI3624</td>
-                                <td>Zrealizowana</td>
-                                <td>2024-09</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2041</td>
-                                <td>2024-09-09</td>
-                                <td>Mysz Razer DeathAdder</td>
-                                <td>Akcesoria</td>
-                                <td>Piotr Wiśniewski</td>
-                                <td>Warszawa</td>
-                                <td>Dystrybutor</td>
-                                <td>11</td>
-                                <td>315.88</td>
-                                <td>3474.68</td>
-                                <td>2492.53</td>
-                                <td>982.15</td>
-                                <td>28.3%</td>
-                                <td>KLI2843</td>
-                                <td>Zrealizowana</td>
-                                <td>2024-09</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2014</td>
-                                <td>2024-09-10</td>
-                                <td>Dell XPS 13</td>
-                                <td>Elektronika</td>
-                                <td>Krzysztof Zieliński</td>
-                                <td>Szczecin</td>
-                                <td>Online</td>
-                                <td>8</td>
-                                <td>3650.47</td>
-                                <td>29203.76</td>
-                                <td>19328.03</td>
-                                <td>9875.73</td>
-                                <td>33.8%</td>
-                                <td>KLI8470</td>
-                                <td>Anulowana</td>
-                                <td>2024-09</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2043</td>
-                                <td>2024-09-12</td>
-                                <td>Laptop Lenovo ThinkPad</td>
-                                <td>Elektronika</td>
-                                <td>Anna Nowak</td>
-                                <td>Poznań</td>
-                                <td>Sklep stacjonarny</td>
-                                <td>13</td>
-                                <td>4056.24</td>
-                                <td>52731.12</td>
-                                <td>33024.28</td>
-                                <td>19706.84</td>
-                                <td>37.4%</td>
-                                <td>KLI5347</td>
-                                <td>W trakcie</td>
-                                <td>2024-09</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2045</td>
-                                <td>2024-09-13</td>
-                                <td>MacBook Pro M3</td>
-                                <td>Elektronika</td>
-                                <td>Michał Lewandowski</td>
-                                <td>Szczecin</td>
-                                <td>Dystrybutor</td>
-                                <td>7</td>
-                                <td>8002.95</td>
-                                <td>56020.65</td>
-                                <td>38090.32</td>
-                                <td>17930.33</td>
-                                <td>32.0%</td>
-                                <td>KLI9497</td>
-                                <td>Anulowana</td>
-                                <td>2024-09</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2029</td>
-                                <td>2024-09-14</td>
-                                <td>Słuchawki Sony WH-1000XM5</td>
-                                <td>Akcesoria</td>
-                                <td>Katarzyna Kowalska</td>
-                                <td>Łódź</td>
-                                <td>Online</td>
-                                <td>8</td>
-                                <td>1197.74</td>
-                                <td>9581.92</td>
-                                <td>6294.89</td>
-                                <td>3287.03</td>
-                                <td>34.3%</td>
-                                <td>KLI8562</td>
-                                <td>Anulowana</td>
-                                <td>2024-09</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2031</td>
-                                <td>2024-09-14</td>
-                                <td>HP EliteBook 850</td>
-                                <td>Elektronika</td>
-                                <td>Michał Lewandowski</td>
-                                <td>Wrocław</td>
-                                <td>Dystrybutor</td>
-                                <td>13</td>
-                                <td>4145.49</td>
-                                <td>53891.37</td>
-                                <td>40956.67</td>
-                                <td>12934.70</td>
-                                <td>24.0%</td>
-                                <td>KLI2631</td>
-                                <td>Anulowana</td>
-                                <td>2024-09</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2008</td>
-                                <td>2024-09-15</td>
-                                <td>Xiaomi Mi 13</td>
-                                <td>Elektronika</td>
-                                <td>Agnieszka Dąbrowska</td>
-                                <td>Szczecin</td>
-                                <td>Telemarketing</td>
-                                <td>4</td>
-                                <td>2636.66</td>
-                                <td>10546.64</td>
-                                <td>7526.03</td>
-                                <td>3020.61</td>
-                                <td>28.6%</td>
-                                <td>KLI5456</td>
-                                <td>Zrealizowana</td>
-                                <td>2024-09</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2020</td>
-                                <td>2024-09-15</td>
-                                <td>Surface Pro 9</td>
-                                <td>Elektronika</td>
-                                <td>Anna Nowak</td>
-                                <td>Warszawa</td>
-                                <td>Online</td>
-                                <td>3</td>
-                                <td>3717.01</td>
-                                <td>11151.03</td>
-                                <td>8312.82</td>
-                                <td>2838.21</td>
-                                <td>25.5%</td>
-                                <td>KLI8734</td>
-                                <td>Zrealizowana</td>
-                                <td>2024-09</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2044</td>
-                                <td>2024-09-15</td>
-                                <td>Klawiatura Logitech MX</td>
-                                <td>Akcesoria</td>
-                                <td>Magdalena Szymańska</td>
-                                <td>Gdańsk</td>
-                                <td>Sklep stacjonarny</td>
-                                <td>8</td>
-                                <td>381.85</td>
-                                <td>3054.80</td>
-                                <td>2271.76</td>
-                                <td>783.04</td>
-                                <td>25.6%</td>
-                                <td>KLI8518</td>
-                                <td>Anulowana</td>
-                                <td>2024-09</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2010</td>
-                                <td>2024-09-17</td>
-                                <td>iPad Pro 12.9</td>
-                                <td>Elektronika</td>
-                                <td>Anna Nowak</td>
-                                <td>Szczecin</td>
-                                <td>B2B</td>
-                                <td>5</td>
-                                <td>4194.56</td>
-                                <td>20972.80</td>
-                                <td>13409.39</td>
-                                <td>7563.41</td>
-                                <td>36.1%</td>
-                                <td>KLI2663</td>
-                                <td>Zrealizowana</td>
-                                <td>2024-09</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2007</td>
-                                <td>2024-09-19</td>
-                                <td>Słuchawki Sony WH-1000XM5</td>
-                                <td>Akcesoria</td>
-                                <td>Magdalena Szymańska</td>
-                                <td>Gdańsk</td>
-                                <td>Online</td>
-                                <td>11</td>
-                                <td>1613.97</td>
-                                <td>17753.67</td>
-                                <td>12377.97</td>
-                                <td>5375.70</td>
-                                <td>30.3%</td>
-                                <td>KLI9271</td>
-                                <td>W trakcie</td>
-                                <td>2024-09</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2051</td>
-                                <td>2024-09-19</td>
-                                <td>Kamera Canon EOS</td>
-                                <td>Elektronika</td>
-                                <td>Magdalena Szymańska</td>
-                                <td>Wrocław</td>
-                                <td>Sklep stacjonarny</td>
-                                <td>7</td>
-                                <td>2599.22</td>
-                                <td>18194.54</td>
-                                <td>11784.32</td>
-                                <td>6410.22</td>
-                                <td>35.2%</td>
-                                <td>KLI9269</td>
-                                <td>Zrealizowana</td>
-                                <td>2024-09</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2026</td>
-                                <td>2024-09-21</td>
-                                <td>Mysz Razer DeathAdder</td>
-                                <td>Akcesoria</td>
-                                <td>Krzysztof Zieliński</td>
-                                <td>Szczecin</td>
-                                <td>Telemarketing</td>
-                                <td>7</td>
-                                <td>281.40</td>
-                                <td>1969.80</td>
-                                <td>1184.97</td>
-                                <td>784.83</td>
-                                <td>39.8%</td>
-                                <td>KLI9974</td>
-                                <td>Zrealizowana</td>
-                                <td>2024-09</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2055</td>
-                                <td>2024-09-21</td>
-                                <td>iPad Pro 12.9</td>
-                                <td>Elektronika</td>
-                                <td>Katarzyna Kowalska</td>
-                                <td>Warszawa</td>
-                                <td>B2B</td>
-                                <td>13</td>
-                                <td>4657.10</td>
-                                <td>60542.30</td>
-                                <td>43930.72</td>
-                                <td>16611.58</td>
-                                <td>27.4%</td>
-                                <td>KLI9161</td>
-                                <td>Anulowana</td>
-                                <td>2024-09</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2040</td>
-                                <td>2024-09-22</td>
-                                <td>HP EliteBook 850</td>
-                                <td>Elektronika</td>
-                                <td>Magdalena Szymańska</td>
-                                <td>Wrocław</td>
-                                <td>B2B</td>
-                                <td>1</td>
-                                <td>3151.02</td>
-                                <td>3151.02</td>
-                                <td>2357.87</td>
-                                <td>793.15</td>
-                                <td>25.2%</td>
-                                <td>KLI8414</td>
-                                <td>W trakcie</td>
-                                <td>2024-09</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2001</td>
-                                <td>2024-09-27</td>
-                                <td>Drukarka HP LaserJet</td>
-                                <td>Elektronika</td>
-                                <td>Piotr Wiśniewski</td>
-                                <td>Szczecin</td>
-                                <td>Dystrybutor</td>
-                                <td>6</td>
-                                <td>660.57</td>
-                                <td>3963.42</td>
-                                <td>2615.91</td>
-                                <td>1347.51</td>
-                                <td>34.0%</td>
-                                <td>KLI8155</td>
-                                <td>Anulowana</td>
-                                <td>2024-09</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2053</td>
-                                <td>2024-09-29</td>
-                                <td>Surface Pro 9</td>
-                                <td>Elektronika</td>
-                                <td>Michał Lewandowski</td>
-                                <td>Kraków</td>
-                                <td>Online</td>
-                                <td>3</td>
-                                <td>4145.60</td>
-                                <td>12436.80</td>
-                                <td>9180.77</td>
-                                <td>3256.03</td>
-                                <td>26.2%</td>
-                                <td>KLI5435</td>
-                                <td>Anulowana</td>
-                                <td>2024-09</td>
-                            </tr>
-                            <tr>
-                                <td>TXN2059</td>
-                                <td>2024-09-29</td>
-                                <td>Kamera Canon EOS</td>
-                                <td>Elektronika</td>
-                                <td>Katarzyna Kowalska</td>
-                                <td>Kraków</td>
-                                <td>Online</td>
-                                <td>7</td>
-                                <td>3057.84</td>
-                                <td>21404.88</td>
-                                <td>16608.67</td>
-                                <td>4796.21</td>
-                                <td>22.4%</td>
-                                <td>KLI1809</td>
-                                <td>W trakcie</td>
-                                <td>2024-09</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-
-        <div class="row mt-4">
-            <div class="col-12">
-                <div class="alert alert-info">
-                    <h5>Informacje o zestawieniu:</h5>
-                    <ul class="mb-0">
-                        <li><strong>Okres:</strong> Q3 2024 (lipiec-wrzesień 2024)</li>
-                        <li><strong>Liczba rekordów:</strong> 60 transakcji</li>
-                        <li><strong>Przedstawiciele:</strong> 10 przedstawicieli handlowych</li>
-                        <li><strong>Regiony:</strong> 8 regionów sprzedażowych</li>
-                        <li><strong>Kanały:</strong> 5 kanałów sprzedaży</li>
-                        <li><strong>Produkty:</strong> 18 różnych produktów</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="row mt-3">
-            <div class="col-12 text-center">
-                <p class="text-muted"><em>Strona wygenerowana automatycznie w celach demonstracyjnych dla projektu RPA w Automation Anywhere 360.</em></p>
-            </div>
-        </div>
+    <div class="alert alert-info">
+        <strong>Kompletny raport sprzedażowy za Q3 2024</strong><br>
+        Zawiera 60 rekordów transakcji z okresu lipiec-wrzesień 2024<br>
+        Wszystkie wartości liczbowe sformatowane zgodnie z polską konwencją (przecinek jako separator dziesiętny)
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <table class="summary-table mb-4 table table-bordered">
+        <tr><td><b>Liczba transakcji:</b></td><td>60</td></tr>
+        <tr><td><b>Łączna wartość sprzedaży:</b></td><td>1 466 375,89 PLN</td></tr>
+        <tr><td><b>Łączna marża:</b></td><td>469 850,90 PLN</td></tr>
+        <tr><td><b>Średnia marża:</b></td><td>31,1%</td></tr>
+        <tr><td><b>Okres:</b></td><td>Q3 2024 (lipiec-wrzesień)</td></tr>
+    </table>
+
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered align-middle text-center">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID_Transakcji</th>
+                    <th>Data_Transakcji</th>
+                    <th>Produkt</th>
+                    <th>Kategoria</th>
+                    <th>Przedstawiciel</th>
+                    <th>Region</th>
+                    <th>Kanal_Sprzedazy</th>
+                    <th>Ilosc</th>
+                    <th>Cena_Jednostkowa</th>
+                    <th>Wartosc_Sprzedazy</th>
+                    <th>Koszt</th>
+                    <th>Marza</th>
+                    <th>Procent_Marzy</th>
+                    <th>Klient</th>
+                    <th>Status</th>
+                    <th>Miesiac</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>TXN2012</td>
+                <td>3.07.2024</td>
+                <td>Mysz Razer DeathAdder</td>
+                <td>Akcesoria</td>
+                <td>Michał Lewandowski</td>
+                <td>Wrocław</td>
+                <td>B2B</td>
+                <td>13</td>
+                <td>289,64</td>
+                <td>3765,32</td>
+                <td>2460,91</td>
+                <td>1304,41</td>
+                <td>34,60</td>
+                <td>Klient_175</td>
+                <td>Anulowana</td>
+                <td>2024-07</td>
+            </tr>
+            <tr>
+                <td>TXN2021</td>
+                <td>3.07.2024</td>
+                <td>Asus ROG Laptop</td>
+                <td>Elektronika</td>
+                <td>Maria Kowalczyk</td>
+                <td>Łódź</td>
+                <td>Telemarketing</td>
+                <td>7</td>
+                <td>5097,02</td>
+                <td>35679,14</td>
+                <td>23695,81</td>
+                <td>11983,33</td>
+                <td>33,60</td>
+                <td>Klient_047</td>
+                <td>Zrealizowana</td>
+                <td>2024-07</td>
+            </tr>
+            <tr>
+                <td>TXN2004</td>
+                <td>5.07.2024</td>
+                <td>Dysk SSD Samsung 1TB</td>
+                <td>Akcesoria</td>
+                <td>Katarzyna Kowalska</td>
+                <td>Katowice</td>
+                <td>B2B</td>
+                <td>11</td>
+                <td>366,22</td>
+                <td>4028,42</td>
+                <td>2906,25</td>
+                <td>1122,17</td>
+                <td>27,90</td>
+                <td>Klient_064</td>
+                <td>W trakcie</td>
+                <td>2024-07</td>
+            </tr>
+            <tr>
+                <td>TXN2028</td>
+                <td>7.07.2024</td>
+                <td>Dysk SSD Samsung 1TB</td>
+                <td>Akcesoria</td>
+                <td>Michał Lewandowski</td>
+                <td>Gdańsk</td>
+                <td>Dystrybutor</td>
+                <td>9</td>
+                <td>335,99</td>
+                <td>3023,91</td>
+                <td>1931,56</td>
+                <td>1092,35</td>
+                <td>36,10</td>
+                <td>Klient_175</td>
+                <td>W trakcie</td>
+                <td>2024-07</td>
+            </tr>
+            <tr>
+                <td>TXN2002</td>
+                <td>9.07.2024</td>
+                <td>Dell XPS 13</td>
+                <td>Elektronika</td>
+                <td>Jan Kowalski</td>
+                <td>Łódź</td>
+                <td>Sklep stacjonarny</td>
+                <td>2</td>
+                <td>3926,17</td>
+                <td>7852,34</td>
+                <td>4800,22</td>
+                <td>3052,12</td>
+                <td>38,90</td>
+                <td>Klient_036</td>
+                <td>W trakcie</td>
+                <td>2024-07</td>
+            </tr>
+            <tr>
+                <td>TXN2035</td>
+                <td>11.07.2024</td>
+                <td>Router Wi-Fi 6</td>
+                <td>Elektronika</td>
+                <td>Maria Kowalczyk</td>
+                <td>Wrocław</td>
+                <td>Online</td>
+                <td>12</td>
+                <td>660,19</td>
+                <td>7922,28</td>
+                <td>6101,54</td>
+                <td>1820,74</td>
+                <td>23</td>
+                <td>Klient_098</td>
+                <td>W trakcie</td>
+                <td>2024-07</td>
+            </tr>
+            <tr>
+                <td>TXN2049</td>
+                <td>12.07.2024</td>
+                <td>Klawiatura Logitech MX</td>
+                <td>Akcesoria</td>
+                <td>Krzysztof Zieliński</td>
+                <td>Poznań</td>
+                <td>B2B</td>
+                <td>6</td>
+                <td>417,40</td>
+                <td>2504,40</td>
+                <td>1601,37</td>
+                <td>903,03</td>
+                <td>36,10</td>
+                <td>Klient_081</td>
+                <td>Anulowana</td>
+                <td>2024-07</td>
+            </tr>
+            <tr>
+                <td>TXN2013</td>
+                <td>14.07.2024</td>
+                <td>Klawiatura Logitech MX</td>
+                <td>Akcesoria</td>
+                <td>Piotr Wiśniewski</td>
+                <td>Kraków</td>
+                <td>Online</td>
+                <td>15</td>
+                <td>509,79</td>
+                <td>7646,85</td>
+                <td>6005,35</td>
+                <td>1641,50</td>
+                <td>21,50</td>
+                <td>Klient_145</td>
+                <td>Anulowana</td>
+                <td>2024-07</td>
+            </tr>
+            <tr>
+                <td>TXN2017</td>
+                <td>15.07.2024</td>
+                <td>Xiaomi Mi 13</td>
+                <td>Elektronika</td>
+                <td>Agnieszka Dąbrowska</td>
+                <td>Warszawa</td>
+                <td>B2B</td>
+                <td>13</td>
+                <td>2047,59</td>
+                <td>26618,67</td>
+                <td>17843,58</td>
+                <td>8775,09</td>
+                <td>33</td>
+                <td>Klient_102</td>
+                <td>Zrealizowana</td>
+                <td>2024-07</td>
+            </tr>
+            <tr>
+                <td>TXN2046</td>
+                <td>19.07.2024</td>
+                <td>Klawiatura Logitech MX</td>
+                <td>Akcesoria</td>
+                <td>Katarzyna Kowalska</td>
+                <td>Kraków</td>
+                <td>Telemarketing</td>
+                <td>14</td>
+                <td>515,19</td>
+                <td>7212,66</td>
+                <td>5248,37</td>
+                <td>1964,29</td>
+                <td>27,20</td>
+                <td>Klient_078</td>
+                <td>Zrealizowana</td>
+                <td>2024-07</td>
+            </tr>
+            <tr>
+                <td>TXN2024</td>
+                <td>21.07.2024</td>
+                <td>Monitor Samsung 27''</td>
+                <td>Elektronika</td>
+                <td>Piotr Wiśniewski</td>
+                <td>Łódź</td>
+                <td>B2B</td>
+                <td>14</td>
+                <td>1218,96</td>
+                <td>17065,44</td>
+                <td>11625,71</td>
+                <td>5439,73</td>
+                <td>31,90</td>
+                <td>Klient_007</td>
+                <td>W trakcie</td>
+                <td>2024-07</td>
+            </tr>
+            <tr>
+                <td>TXN2030</td>
+                <td>21.07.2024</td>
+                <td>Klawiatura Logitech MX</td>
+                <td>Akcesoria</td>
+                <td>Jan Kowalski</td>
+                <td>Kraków</td>
+                <td>Online</td>
+                <td>14</td>
+                <td>456,89</td>
+                <td>6396,46</td>
+                <td>4419,22</td>
+                <td>1977,24</td>
+                <td>30,90</td>
+                <td>Klient_043</td>
+                <td>W trakcie</td>
+                <td>2024-07</td>
+            </tr>
+            <tr>
+                <td>TXN2050</td>
+                <td>23.07.2024</td>
+                <td>Monitor Samsung 27''</td>
+                <td>Elektronika</td>
+                <td>Anna Nowak</td>
+                <td>Wrocław</td>
+                <td>Telemarketing</td>
+                <td>15</td>
+                <td>1086,21</td>
+                <td>16293,15</td>
+                <td>11201,76</td>
+                <td>5091,39</td>
+                <td>31,20</td>
+                <td>Klient_012</td>
+                <td>Anulowana</td>
+                <td>2024-07</td>
+            </tr>
+            <tr>
+                <td>TXN2056</td>
+                <td>25.07.2024</td>
+                <td>MacBook Pro M3</td>
+                <td>Elektronika</td>
+                <td>Piotr Wiśniewski</td>
+                <td>Łódź</td>
+                <td>Online</td>
+                <td>15</td>
+                <td>9260,51</td>
+                <td>138907,65</td>
+                <td>101435,92</td>
+                <td>37471,73</td>
+                <td>27</td>
+                <td>Klient_098</td>
+                <td>W trakcie</td>
+                <td>2024-07</td>
+            </tr>
+            <tr>
+                <td>TXN2006</td>
+                <td>26.07.2024</td>
+                <td>Xiaomi Mi 13</td>
+                <td>Elektronika</td>
+                <td>Magdalena Szymańska</td>
+                <td>Poznań</td>
+                <td>Sklep stacjonarny</td>
+                <td>15</td>
+                <td>2450,73</td>
+                <td>36760,95</td>
+                <td>22971,15</td>
+                <td>13789,80</td>
+                <td>37,50</td>
+                <td>Klient_046</td>
+                <td>Zrealizowana</td>
+                <td>2024-07</td>
+            </tr>
+            <tr>
+                <td>TXN2034</td>
+                <td>26.07.2024</td>
+                <td>Monitor Samsung 27''</td>
+                <td>Elektronika</td>
+                <td>Piotr Wiśniewski</td>
+                <td>Łódź</td>
+                <td>Online</td>
+                <td>7</td>
+                <td>1301,31</td>
+                <td>9109,17</td>
+                <td>6442,71</td>
+                <td>2666,46</td>
+                <td>29,30</td>
+                <td>Klient_047</td>
+                <td>Anulowana</td>
+                <td>2024-07</td>
+            </tr>
+            <tr>
+                <td>TXN2003</td>
+                <td>2.08.2024</td>
+                <td>Laptop Lenovo ThinkPad</td>
+                <td>Elektronika</td>
+                <td>Anna Nowak</td>
+                <td>Szczecin</td>
+                <td>B2B</td>
+                <td>11</td>
+                <td>5379,75</td>
+                <td>59177,25</td>
+                <td>40368,74</td>
+                <td>18808,51</td>
+                <td>31,80</td>
+                <td>Klient_119</td>
+                <td>Anulowana</td>
+                <td>2024-08</td>
+            </tr>
+            <tr>
+                <td>TXN2016</td>
+                <td>3.08.2024</td>
+                <td>Mysz Razer DeathAdder</td>
+                <td>Akcesoria</td>
+                <td>Magdalena Szymańska</td>
+                <td>Gdańsk</td>
+                <td>Telemarketing</td>
+                <td>12</td>
+                <td>257,44</td>
+                <td>3089,28</td>
+                <td>2027,62</td>
+                <td>1061,66</td>
+                <td>34,40</td>
+                <td>Klient_009</td>
+                <td>Anulowana</td>
+                <td>2024-08</td>
+            </tr>
+            <tr>
+                <td>TXN2023</td>
+                <td>3.08.2024</td>
+                <td>Surface Pro 9</td>
+                <td>Elektronika</td>
+                <td>Magdalena Szymańska</td>
+                <td>Wrocław</td>
+                <td>B2B</td>
+                <td>14</td>
+                <td>4521,71</td>
+                <td>63303,94</td>
+                <td>38894,42</td>
+                <td>24409,52</td>
+                <td>38,60</td>
+                <td>Klient_046</td>
+                <td>Zrealizowana</td>
+                <td>2024-08</td>
+            </tr>
+            <tr>
+                <td>TXN2054</td>
+                <td>6.08.2024</td>
+                <td>Xiaomi Mi 13</td>
+                <td>Elektronika</td>
+                <td>Krzysztof Zieliński</td>
+                <td>Poznań</td>
+                <td>Dystrybutor</td>
+                <td>11</td>
+                <td>2283,67</td>
+                <td>25120,37</td>
+                <td>19626,45</td>
+                <td>5493,92</td>
+                <td>21,90</td>
+                <td>Klient_122</td>
+                <td>Zrealizowana</td>
+                <td>2024-08</td>
+            </tr>
+            <tr>
+                <td>TXN2019</td>
+                <td>8.08.2024</td>
+                <td>Surface Pro 9</td>
+                <td>Elektronika</td>
+                <td>Agnieszka Dąbrowska</td>
+                <td>Warszawa</td>
+                <td>Online</td>
+                <td>11</td>
+                <td>3843,16</td>
+                <td>42274,76</td>
+                <td>26996,61</td>
+                <td>15278,15</td>
+                <td>36,10</td>
+                <td>Klient_078</td>
+                <td>Anulowana</td>
+                <td>2024-08</td>
+            </tr>
+            <tr>
+                <td>TXN2039</td>
+                <td>12.08.2024</td>
+                <td>iPad Pro 12.9</td>
+                <td>Elektronika</td>
+                <td>Magdalena Szymańska</td>
+                <td>Poznań</td>
+                <td>Sklep stacjonarny</td>
+                <td>12</td>
+                <td>5410,81</td>
+                <td>64929,72</td>
+                <td>41088,42</td>
+                <td>23841,30</td>
+                <td>36,70</td>
+                <td>Klient_028</td>
+                <td>W trakcie</td>
+                <td>2024-08</td>
+            </tr>
+            <tr>
+                <td>TXN2011</td>
+                <td>13.08.2024</td>
+                <td>Kamera Canon EOS</td>
+                <td>Elektronika</td>
+                <td>Michał Lewandowski</td>
+                <td>Łódź</td>
+                <td>Sklep stacjonarny</td>
+                <td>10</td>
+                <td>2636,85</td>
+                <td>26368,50</td>
+                <td>16619,30</td>
+                <td>9749,20</td>
+                <td>37</td>
+                <td>Klient_073</td>
+                <td>Zrealizowana</td>
+                <td>2024-08</td>
+            </tr>
+            <tr>
+                <td>TXN2057</td>
+                <td>13.08.2024</td>
+                <td>Monitor Samsung 27''</td>
+                <td>Elektronika</td>
+                <td>Agnieszka Dąbrowska</td>
+                <td>Poznań</td>
+                <td>Sklep stacjonarny</td>
+                <td>5</td>
+                <td>1368,03</td>
+                <td>6840,15</td>
+                <td>5326,53</td>
+                <td>1513,62</td>
+                <td>22,10</td>
+                <td>Klient_085</td>
+                <td>Anulowana</td>
+                <td>2024-08</td>
+            </tr>
+            <tr>
+                <td>TXN2036</td>
+                <td>14.08.2024</td>
+                <td>Mysz Razer DeathAdder</td>
+                <td>Akcesoria</td>
+                <td>Maria Kowalczyk</td>
+                <td>Poznań</td>
+                <td>B2B</td>
+                <td>15</td>
+                <td>313,24</td>
+                <td>4698,60</td>
+                <td>3254,18</td>
+                <td>1444,42</td>
+                <td>30,70</td>
+                <td>Klient_029</td>
+                <td>Anulowana</td>
+                <td>2024-08</td>
+            </tr>
+            <tr>
+                <td>TXN2052</td>
+                <td>15.08.2024</td>
+                <td>iPhone 15 Pro</td>
+                <td>Elektronika</td>
+                <td>Anna Nowak</td>
+                <td>Katowice</td>
+                <td>Telemarketing</td>
+                <td>11</td>
+                <td>6222,04</td>
+                <td>68442,44</td>
+                <td>41320,20</td>
+                <td>27122,24</td>
+                <td>39,60</td>
+                <td>Klient_056</td>
+                <td>W trakcie</td>
+                <td>2024-08</td>
+            </tr>
+            <tr>
+                <td>TXN2038</td>
+                <td>16.08.2024</td>
+                <td>HP EliteBook 850</td>
+                <td>Elektronika</td>
+                <td>Agnieszka Dąbrowska</td>
+                <td>Katowice</td>
+                <td>Dystrybutor</td>
+                <td>14</td>
+                <td>2993,89</td>
+                <td>41914,46</td>
+                <td>28803,60</td>
+                <td>13110,86</td>
+                <td>31,30</td>
+                <td>Klient_085</td>
+                <td>Anulowana</td>
+                <td>2024-08</td>
+            </tr>
+            <tr>
+                <td>TXN2060</td>
+                <td>16.08.2024</td>
+                <td>Klawiatura Logitech MX</td>
+                <td>Akcesoria</td>
+                <td>Agnieszka Dąbrowska</td>
+                <td>Wrocław</td>
+                <td>Online</td>
+                <td>10</td>
+                <td>453,10</td>
+                <td>4531</td>
+                <td>3320,90</td>
+                <td>1210,10</td>
+                <td>26,70</td>
+                <td>Klient_086</td>
+                <td>Anulowana</td>
+                <td>2024-08</td>
+            </tr>
+            <tr>
+                <td>TXN2037</td>
+                <td>17.08.2024</td>
+                <td>Monitor Samsung 27''</td>
+                <td>Elektronika</td>
+                <td>Krzysztof Zieliński</td>
+                <td>Szczecin</td>
+                <td>Dystrybutor</td>
+                <td>14</td>
+                <td>1414,35</td>
+                <td>19800,90</td>
+                <td>12367,22</td>
+                <td>7433,68</td>
+                <td>37,50</td>
+                <td>Klient_009</td>
+                <td>Zrealizowana</td>
+                <td>2024-08</td>
+            </tr>
+            <tr>
+                <td>TXN2005</td>
+                <td>18.08.2024</td>
+                <td>Asus ROG Laptop</td>
+                <td>Elektronika</td>
+                <td>Anna Nowak</td>
+                <td>Gdańsk</td>
+                <td>Telemarketing</td>
+                <td>8</td>
+                <td>6174,60</td>
+                <td>49396,80</td>
+                <td>33934,90</td>
+                <td>15461,90</td>
+                <td>31,30</td>
+                <td>Klient_086</td>
+                <td>Zrealizowana</td>
+                <td>2024-08</td>
+            </tr>
+            <tr>
+                <td>TXN2015</td>
+                <td>22.08.2024</td>
+                <td>Dysk SSD Samsung 1TB</td>
+                <td>Akcesoria</td>
+                <td>Piotr Wiśniewski</td>
+                <td>Warszawa</td>
+                <td>Sklep stacjonarny</td>
+                <td>8</td>
+                <td>306,71</td>
+                <td>2453,68</td>
+                <td>1823,43</td>
+                <td>630,25</td>
+                <td>25,70</td>
+                <td>Klient_032</td>
+                <td>Anulowana</td>
+                <td>2024-08</td>
+            </tr>
+            <tr>
+                <td>TXN2042</td>
+                <td>24.08.2024</td>
+                <td>Mysz Razer DeathAdder</td>
+                <td>Akcesoria</td>
+                <td>Piotr Wiśniewski</td>
+                <td>Szczecin</td>
+                <td>Online</td>
+                <td>13</td>
+                <td>315,50</td>
+                <td>4101,50</td>
+                <td>2519,85</td>
+                <td>1581,65</td>
+                <td>38,60</td>
+                <td>Klient_016</td>
+                <td>Anulowana</td>
+                <td>2024-08</td>
+            </tr>
+            <tr>
+                <td>TXN2033</td>
+                <td>25.08.2024</td>
+                <td>Surface Pro 9</td>
+                <td>Elektronika</td>
+                <td>Katarzyna Kowalska</td>
+                <td>Gdańsk</td>
+                <td>Online</td>
+                <td>4</td>
+                <td>4444,71</td>
+                <td>17778,84</td>
+                <td>13954,37</td>
+                <td>3824,47</td>
+                <td>21,50</td>
+                <td>Klient_012</td>
+                <td>Anulowana</td>
+                <td>2024-08</td>
+            </tr>
+            <tr>
+                <td>TXN2048</td>
+                <td>25.08.2024</td>
+                <td>iPad Pro 12.9</td>
+                <td>Elektronika</td>
+                <td>Katarzyna Kowalska</td>
+                <td>Poznań</td>
+                <td>Online</td>
+                <td>14</td>
+                <td>4220,85</td>
+                <td>59091,90</td>
+                <td>38515,31</td>
+                <td>20576,59</td>
+                <td>34,80</td>
+                <td>Klient_001</td>
+                <td>Anulowana</td>
+                <td>2024-08</td>
+            </tr>
+            <tr>
+                <td>TXN2009</td>
+                <td>29.08.2024</td>
+                <td>Xiaomi Mi 13</td>
+                <td>Elektronika</td>
+                <td>Katarzyna Kowalska</td>
+                <td>Poznań</td>
+                <td>Telemarketing</td>
+                <td>15</td>
+                <td>2212,16</td>
+                <td>33182,40</td>
+                <td>23223,65</td>
+                <td>9958,75</td>
+                <td>30</td>
+                <td>Klient_187</td>
+                <td>Zrealizowana</td>
+                <td>2024-08</td>
+            </tr>
+            <tr>
+                <td>TXN2047</td>
+                <td>1.09.2024</td>
+                <td>Klawiatura Logitech MX</td>
+                <td>Akcesoria</td>
+                <td>Maria Kowalczyk</td>
+                <td>Gdańsk</td>
+                <td>Sklep stacjonarny</td>
+                <td>9</td>
+                <td>362,01</td>
+                <td>3258,09</td>
+                <td>2511,50</td>
+                <td>746,59</td>
+                <td>22,90</td>
+                <td>Klient_018</td>
+                <td>W trakcie</td>
+                <td>2024-09</td>
+            </tr>
+            <tr>
+                <td>TXN2027</td>
+                <td>3.09.2024</td>
+                <td>Surface Pro 9</td>
+                <td>Elektronika</td>
+                <td>Krzysztof Zieliński</td>
+                <td>Wrocław</td>
+                <td>Sklep stacjonarny</td>
+                <td>8</td>
+                <td>3491,91</td>
+                <td>27935,28</td>
+                <td>19513,03</td>
+                <td>8422,25</td>
+                <td>30,10</td>
+                <td>Klient_190</td>
+                <td>W trakcie</td>
+                <td>2024-09</td>
+            </tr>
+            <tr>
+                <td>TXN2025</td>
+                <td>4.09.2024</td>
+                <td>Dell XPS 13</td>
+                <td>Elektronika</td>
+                <td>Krzysztof Zieliński</td>
+                <td>Łódź</td>
+                <td>Dystrybutor</td>
+                <td>9</td>
+                <td>4156,49</td>
+                <td>37408,41</td>
+                <td>28986,10</td>
+                <td>8422,31</td>
+                <td>22,50</td>
+                <td>Klient_007</td>
+                <td>Anulowana</td>
+                <td>2024-09</td>
+            </tr>
+            <tr>
+                <td>TXN2058</td>
+                <td>5.09.2024</td>
+                <td>Mysz Razer DeathAdder</td>
+                <td>Akcesoria</td>
+                <td>Krzysztof Zieliński</td>
+                <td>Kraków</td>
+                <td>Sklep stacjonarny</td>
+                <td>4</td>
+                <td>328,86</td>
+                <td>1315,44</td>
+                <td>996,78</td>
+                <td>318,66</td>
+                <td>24,20</td>
+                <td>Klient_047</td>
+                <td>W trakcie</td>
+                <td>2024-09</td>
+            </tr>
+            <tr>
+                <td>TXN2018</td>
+                <td>6.09.2024</td>
+                <td>Klawiatura Logitech MX</td>
+                <td>Akcesoria</td>
+                <td>Jan Kowalski</td>
+                <td>Warszawa</td>
+                <td>Sklep stacjonarny</td>
+                <td>10</td>
+                <td>386,37</td>
+                <td>3863,70</td>
+                <td>2533,16</td>
+                <td>1330,54</td>
+                <td>34,40</td>
+                <td>Klient_007</td>
+                <td>Anulowana</td>
+                <td>2024-09</td>
+            </tr>
+            <tr>
+                <td>TXN2022</td>
+                <td>8.09.2024</td>
+                <td>iPhone 15 Pro</td>
+                <td>Elektronika</td>
+                <td>Katarzyna Kowalska</td>
+                <td>Wrocław</td>
+                <td>B2B</td>
+                <td>10</td>
+                <td>6159,34</td>
+                <td>61593,40</td>
+                <td>37292,40</td>
+                <td>24301</td>
+                <td>39,50</td>
+                <td>Klient_185</td>
+                <td>Zrealizowana</td>
+                <td>2024-09</td>
+            </tr>
+            <tr>
+                <td>TXN2032</td>
+                <td>8.09.2024</td>
+                <td>iPhone 15 Pro</td>
+                <td>Elektronika</td>
+                <td>Krzysztof Zieliński</td>
+                <td>Wrocław</td>
+                <td>Sklep stacjonarny</td>
+                <td>3</td>
+                <td>4557,69</td>
+                <td>13673,07</td>
+                <td>8266,97</td>
+                <td>5406,10</td>
+                <td>39,50</td>
+                <td>Klient_132</td>
+                <td>Zrealizowana</td>
+                <td>2024-09</td>
+            </tr>
+            <tr>
+                <td>TXN2041</td>
+                <td>9.09.2024</td>
+                <td>Mysz Razer DeathAdder</td>
+                <td>Akcesoria</td>
+                <td>Piotr Wiśniewski</td>
+                <td>Warszawa</td>
+                <td>Dystrybutor</td>
+                <td>11</td>
+                <td>315,88</td>
+                <td>3474,68</td>
+                <td>2492,53</td>
+                <td>982,15</td>
+                <td>28,30</td>
+                <td>Klient_035</td>
+                <td>Zrealizowana</td>
+                <td>2024-09</td>
+            </tr>
+            <tr>
+                <td>TXN2014</td>
+                <td>10.09.2024</td>
+                <td>Dell XPS 13</td>
+                <td>Elektronika</td>
+                <td>Krzysztof Zieliński</td>
+                <td>Szczecin</td>
+                <td>Online</td>
+                <td>8</td>
+                <td>3650,47</td>
+                <td>29203,76</td>
+                <td>19328,03</td>
+                <td>9875,73</td>
+                <td>33,80</td>
+                <td>Klient_190</td>
+                <td>Anulowana</td>
+                <td>2024-09</td>
+            </tr>
+            <tr>
+                <td>TXN2043</td>
+                <td>12.09.2024</td>
+                <td>Laptop Lenovo ThinkPad</td>
+                <td>Elektronika</td>
+                <td>Anna Nowak</td>
+                <td>Poznań</td>
+                <td>Sklep stacjonarny</td>
+                <td>13</td>
+                <td>4056,24</td>
+                <td>52731,12</td>
+                <td>33024,28</td>
+                <td>19706,84</td>
+                <td>37,40</td>
+                <td>Klient_021</td>
+                <td>W trakcie</td>
+                <td>2024-09</td>
+            </tr>
+            <tr>
+                <td>TXN2045</td>
+                <td>13.09.2024</td>
+                <td>MacBook Pro M3</td>
+                <td>Elektronika</td>
+                <td>Michał Lewandowski</td>
+                <td>Szczecin</td>
+                <td>Dystrybutor</td>
+                <td>7</td>
+                <td>8002,95</td>
+                <td>56020,65</td>
+                <td>38090,32</td>
+                <td>17930,33</td>
+                <td>32</td>
+                <td>Klient_016</td>
+                <td>Anulowana</td>
+                <td>2024-09</td>
+            </tr>
+            <tr>
+                <td>TXN2029</td>
+                <td>14.09.2024</td>
+                <td>Słuchawki Sony WH-1000XM5</td>
+                <td>Akcesoria</td>
+                <td>Katarzyna Kowalska</td>
+                <td>Łódź</td>
+                <td>Online</td>
+                <td>8</td>
+                <td>1197,74</td>
+                <td>9581,92</td>
+                <td>6294,89</td>
+                <td>3287,03</td>
+                <td>34,30</td>
+                <td>Klient_180</td>
+                <td>Anulowana</td>
+                <td>2024-09</td>
+            </tr>
+            <tr>
+                <td>TXN2031</td>
+                <td>14.09.2024</td>
+                <td>HP EliteBook 850</td>
+                <td>Elektronika</td>
+                <td>Michał Lewandowski</td>
+                <td>Wrocław</td>
+                <td>Dystrybutor</td>
+                <td>13</td>
+                <td>4145,49</td>
+                <td>53891,37</td>
+                <td>40956,67</td>
+                <td>12934,70</td>
+                <td>24</td>
+                <td>Klient_149</td>
+                <td>Anulowana</td>
+                <td>2024-09</td>
+            </tr>
+            <tr>
+                <td>TXN2008</td>
+                <td>15.09.2024</td>
+                <td>Xiaomi Mi 13</td>
+                <td>Elektronika</td>
+                <td>Agnieszka Dąbrowska</td>
+                <td>Szczecin</td>
+                <td>Telemarketing</td>
+                <td>4</td>
+                <td>2636,66</td>
+                <td>10546,64</td>
+                <td>7526,03</td>
+                <td>3020,61</td>
+                <td>28,60</td>
+                <td>Klient_102</td>
+                <td>Zrealizowana</td>
+                <td>2024-09</td>
+            </tr>
+            <tr>
+                <td>TXN2020</td>
+                <td>15.09.2024</td>
+                <td>Surface Pro 9</td>
+                <td>Elektronika</td>
+                <td>Anna Nowak</td>
+                <td>Warszawa</td>
+                <td>Online</td>
+                <td>3</td>
+                <td>3717,01</td>
+                <td>11151,03</td>
+                <td>8312,82</td>
+                <td>2838,21</td>
+                <td>25,50</td>
+                <td>Klient_083</td>
+                <td>Zrealizowana</td>
+                <td>2024-09</td>
+            </tr>
+            <tr>
+                <td>TXN2044</td>
+                <td>15.09.2024</td>
+                <td>Klawiatura Logitech MX</td>
+                <td>Akcesoria</td>
+                <td>Magdalena Szymańska</td>
+                <td>Gdańsk</td>
+                <td>Sklep stacjonarny</td>
+                <td>8</td>
+                <td>381,85</td>
+                <td>3054,80</td>
+                <td>2271,76</td>
+                <td>783,04</td>
+                <td>25,60</td>
+                <td>Klient_102</td>
+                <td>Anulowana</td>
+                <td>2024-09</td>
+            </tr>
+            <tr>
+                <td>TXN2010</td>
+                <td>17.09.2024</td>
+                <td>iPad Pro 12.9</td>
+                <td>Elektronika</td>
+                <td>Anna Nowak</td>
+                <td>Szczecin</td>
+                <td>B2B</td>
+                <td>5</td>
+                <td>4194,56</td>
+                <td>20972,80</td>
+                <td>13409,39</td>
+                <td>7563,41</td>
+                <td>36,10</td>
+                <td>Klient_009</td>
+                <td>Zrealizowana</td>
+                <td>2024-09</td>
+            </tr>
+            <tr>
+                <td>TXN2007</td>
+                <td>19.09.2024</td>
+                <td>Słuchawki Sony WH-1000XM5</td>
+                <td>Akcesoria</td>
+                <td>Magdalena Szymańska</td>
+                <td>Gdańsk</td>
+                <td>Online</td>
+                <td>11</td>
+                <td>1613,97</td>
+                <td>17753,67</td>
+                <td>12377,97</td>
+                <td>5375,70</td>
+                <td>30,30</td>
+                <td>Klient_074</td>
+                <td>W trakcie</td>
+                <td>2024-09</td>
+            </tr>
+            <tr>
+                <td>TXN2051</td>
+                <td>19.09.2024</td>
+                <td>Kamera Canon EOS</td>
+                <td>Elektronika</td>
+                <td>Magdalena Szymańska</td>
+                <td>Wrocław</td>
+                <td>Sklep stacjonarny</td>
+                <td>7</td>
+                <td>2599,22</td>
+                <td>18194,54</td>
+                <td>11784,32</td>
+                <td>6410,22</td>
+                <td>35,20</td>
+                <td>Klient_190</td>
+                <td>Zrealizowana</td>
+                <td>2024-09</td>
+            </tr>
+            <tr>
+                <td>TXN2026</td>
+                <td>21.09.2024</td>
+                <td>Mysz Razer DeathAdder</td>
+                <td>Akcesoria</td>
+                <td>Krzysztof Zieliński</td>
+                <td>Szczecin</td>
+                <td>Telemarketing</td>
+                <td>7</td>
+                <td>281,40</td>
+                <td>1969,80</td>
+                <td>1184,97</td>
+                <td>784,83</td>
+                <td>39,80</td>
+                <td>Klient_096</td>
+                <td>Zrealizowana</td>
+                <td>2024-09</td>
+            </tr>
+            <tr>
+                <td>TXN2055</td>
+                <td>21.09.2024</td>
+                <td>iPad Pro 12.9</td>
+                <td>Elektronika</td>
+                <td>Katarzyna Kowalska</td>
+                <td>Warszawa</td>
+                <td>B2B</td>
+                <td>13</td>
+                <td>4657,10</td>
+                <td>60542,30</td>
+                <td>43930,72</td>
+                <td>16611,58</td>
+                <td>27,40</td>
+                <td>Klient_036</td>
+                <td>Anulowana</td>
+                <td>2024-09</td>
+            </tr>
+            <tr>
+                <td>TXN2040</td>
+                <td>22.09.2024</td>
+                <td>HP EliteBook 850</td>
+                <td>Elektronika</td>
+                <td>Magdalena Szymańska</td>
+                <td>Wrocław</td>
+                <td>B2B</td>
+                <td>1</td>
+                <td>3151,02</td>
+                <td>3151,02</td>
+                <td>2357,87</td>
+                <td>793,15</td>
+                <td>25,20</td>
+                <td>Klient_036</td>
+                <td>W trakcie</td>
+                <td>2024-09</td>
+            </tr>
+            <tr>
+                <td>TXN2001</td>
+                <td>27.09.2024</td>
+                <td>Drukarka HP LaserJet</td>
+                <td>Elektronika</td>
+                <td>Piotr Wiśniewski</td>
+                <td>Szczecin</td>
+                <td>Dystrybutor</td>
+                <td>6</td>
+                <td>660,57</td>
+                <td>3963,42</td>
+                <td>2615,91</td>
+                <td>1347,51</td>
+                <td>34</td>
+                <td>Klient_021</td>
+                <td>Anulowana</td>
+                <td>2024-09</td>
+            </tr>
+            <tr>
+                <td>TXN2053</td>
+                <td>29.09.2024</td>
+                <td>Surface Pro 9</td>
+                <td>Elektronika</td>
+                <td>Michał Lewandowski</td>
+                <td>Kraków</td>
+                <td>Online</td>
+                <td>3</td>
+                <td>4145,60</td>
+                <td>12436,80</td>
+                <td>9180,77</td>
+                <td>3256,03</td>
+                <td>26,20</td>
+                <td>Klient_078</td>
+                <td>Anulowana</td>
+                <td>2024-09</td>
+            </tr>
+            <tr>
+                <td>TXN2059</td>
+                <td>29.09.2024</td>
+                <td>Kamera Canon EOS</td>
+                <td>Elektronika</td>
+                <td>Katarzyna Kowalska</td>
+                <td>Kraków</td>
+                <td>Online</td>
+                <td>7</td>
+                <td>3057,84</td>
+                <td>21404,88</td>
+                <td>16608,67</td>
+                <td>4796,21</td>
+                <td>22,40</td>
+                <td>Klient_098</td>
+                <td>W trakcie</td>
+                <td>2024-09</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="mt-4">
+        <h5>Informacje dodatkowe:</h5>
+        <ul>
+            <li>Dane zostały automatycznie sformatowane z polską konwencją liczb (przecinek jako separator dziesiętny)</li>
+            <li>Tabela zawiera wszystkie 60 rekordów z pliku źródłowego</li>
+            <li>Możliwe jest sortowanie i filtrowanie danych po publikacji</li>
+            <li>Plik jest gotowy do wykorzystania w projektach RPA Automation Anywhere 360</li>
+        </ul>
+    </div>
+
+    <p class="mt-4"><em>Strona wygenerowana automatycznie na podstawie danych sprzedażowych Q3 2024. Ostatnia aktualizacja: 2025-07-05 12:19:07</em></p>
 </body>
 </html>
